@@ -33,5 +33,16 @@ public class Prak01
         String s ="Operasi";
         System.out.println("Isi Variabel s : " + s);
         System.out.println("Perbandingan isi r dengan s (Case Sensitive) : " + r.compareTo(s));
+        
+        System.out.println("Pada x terdapat huruf 'a' : " + x.contains("a"));
+        
+        System.out.println("Isi Variabel x besar semua : " + x.toUpperCase());
+        System.out.println("Isi Variabel x kecil semua : " + x.toLowerCase());
+        
+        String t = "    Operasi String    ";
+        System.out.println("Isi Variabel t : \""+ t +"\"");
+        System.out.println("Isi Variabel t tanpa spasi : \""+ t.trim() +"\"");
+        
+        System.out.println("Gabungkan isi Variabel x dan r : " + x.concat(r));
     }
 }
