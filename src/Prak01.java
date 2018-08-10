@@ -1,3 +1,6 @@
+
+import java.util.Locale;
+
 public class Prak01 
 {
     public static void main(String[] args)
@@ -44,5 +47,27 @@ public class Prak01
         System.out.println("Isi Variabel t tanpa spasi : \""+ t.trim() +"\"");
         
         System.out.println("Gabungkan isi Variabel x dan r : " + x.concat(r));
+        
+        System.out.println("Karakter mulai posisi 3 di Variabel x : " + x.substring(3));
+        System.out.println("Karakter dari posisi 3-5 di Variabel x : " + x.substring(3,6));
+        
+        String tclean = t.trim();
+        System.out.println("Isi Variabel tclean : " + t.trim());
+        System.out.println("Rubah 'i' jadi 'E' di Variabel tclean : " + tclean.replace("i","E"));
+        
+        String[] arrT = tclean.split(" ");
+        System.out.println("Pecah kata di Variabel tclean : ");
+        for (int i = 0; i < arrT.length; i++)
+            System.out.println(arrT[i]);
+        
+        String[] arrTr = tclean.split("r");
+        System.out.println("Pecah berdasarkan huruf 'r' di Variabel tclean : ");
+        for (int i = 0; i < arrTr.length; i++)
+            System.out.println(arrTr[i]);
+        
+        double d = 1545454000;
+        System.out.println(String.format("Uang saya %,.4f", d));
+        
+        System.out.println(String.format(Locale.forLanguageTag("in-ID"),"Uang saya Rp %,.2f", d));
     }
 }
