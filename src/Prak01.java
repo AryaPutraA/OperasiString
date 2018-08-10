@@ -13,5 +13,16 @@ public class Prak01
         String y = "";
         System.out.println("Isi Variabel y : " + y);
         System.out.println("y adalah kosong : " + y.isEmpty());
+        
+        System.out.println("Isi x sama dengan y : " + x.equals(y));
+        
+        String z = "Operasi";
+        System.out.println("Isi Variabel z : " + z);
+        System.out.println("Isi x sama dengan z (Case Sensitive) : " + x.equals(z));
+        
+        String r = "Operasi";
+        System.out.println("Isi Variabel r : " + r);
+        System.out.println("Isi x sama dengan r (Case Sensitive) : " + x.equals(r));
+        System.out.println("Isi x sama dengan r (Not Case Sensitive) : " + x.equalsIgnoreCase(r));
     }
 }
