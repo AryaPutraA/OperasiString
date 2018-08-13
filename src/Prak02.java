@@ -1,3 +1,4 @@
+import java.util.*;
 public class Prak02
 {
 	private static void tampilJudul(String identitas)
@@ -9,5 +10,16 @@ public class Prak02
 	{
 		String identitas = " Arya Putra Adyartama / XR3 / 7";
 		tampilJudul(identitas);
+		String kalimat = tampilInput();
+	}
+	private static String tampilInput()
+	{
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("Masukan Kalimat: ");
+		String kalimat = scanner.nextLine();
+		System.out.println("Kalimat Asli : " + kalimat);
+		
+		return kalimat;
 	}
 }
